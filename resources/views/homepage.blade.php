@@ -30,7 +30,7 @@
 @section('main-top')
 
     <div class="jumbotron-container">
-        <img src="{{ Vite::asset('resources/images/jumbotron.png') }}" alt="">
+        
     </div>
 
 @endsection
