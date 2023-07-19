@@ -14,5 +14,61 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('top-content');
-});
+   
+$data = [
+    'links' =>[
+
+            [
+                'url'=> '#',
+                'title'=> 'CHARACTERS',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'COMICS',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'MOVIES',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'TV',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'GAMES',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'COLLECTIBLES',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'VIDEOS',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'FANS',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'NEWS',
+                'active'=> false 
+            ],
+            [
+                'url'=> '#',
+                'title'=> 'SHOP',
+                'active'=> false 
+            ],
+    ]  
+];
+return view('homepage', $data);
+})->name('homepage');

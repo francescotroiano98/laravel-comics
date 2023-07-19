@@ -13,9 +13,7 @@
 <body>
     @include('partials.header')
 
-    <main>
-        
-    </main>
+    @include('partials.main')
 
     @include('partials.footer')
     @yield('custom-scripts-tail')
