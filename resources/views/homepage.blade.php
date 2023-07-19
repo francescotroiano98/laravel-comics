@@ -37,6 +37,22 @@
 
 @section('main-bottom')
 
+<section class="container d-flex flex-wrap justify-content-between py-4">
+    @foreach($serieslist as $singleserie)
+        <div class="d-flex series-container">
+        
+            <div class="image-container">
+                <img src="{{ $singleserie['thumb'] }}" alt="">
+            </div>
+            <div class="title-container">
+                <p>{{ $singleserie['series'] }}</p>
+            </div>
+        
+        
+        </div>
+    @endforeach
+</section>
+    
 
 @endsection
 
