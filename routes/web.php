@@ -144,7 +144,63 @@ $data = [
                     'series' => 'Catwoman',
                     'type' => 'graphic novel',
                 ],
-            ]  
+            ],
+            'footerLink' => [
+                                [
+                                'name' => 'DC COMICS',
+                                'link' => [
+                                'CHARACTERS',
+                                'COMICS',
+                                'MOVIES',
+                                'TV',
+                                'GAMES',
+                                'COLLECTIBLES',
+                                'VIDEOS',
+                                'FANS',
+                                'NEWS'
+                                ]
+                                
+                            ],
+                            [
+                                'name'=> 'DC',
+                                'link'=>[
+                                "CHARACTERS",
+                                'COMICS',
+                                'MOVIES',
+                                'TV',
+                                'GAMES',
+                                'COLLECTIBLES',
+                                'VIDEOS',
+                                'FANS',
+                                'NEWS'
+                                ]
+                            ],
+                            [
+                                'name'=> 'SITES',
+                                'link'=>[
+                                'CHARACTERS',
+                                'COMICS',
+                                'FANS',
+                                'NEWS'
+                                ]
+                            ],
+                            [
+                                'name'=> 'SHOP',
+                                'link'=>[
+                                
+                                'COMICS',
+                                'MOVIES',
+                                'GAMES',
+                                'COLLECTIBLES',
+                                
+                                ]
+                            ],
+                        ]
+
+        
+                
+            
 ];
 return view('homepage', $data);
+
 })->name('homepage');

@@ -56,3 +56,57 @@
 
 @endsection
 
+@section('footer-top')
+
+<section class="footer-top">
+    <div class="container">
+
+        <div class="left-nav-content">
+            <nav>
+                <ul>
+                    @foreach($footerLink as $link)
+                    <li>
+                        <h2>{{ $link['name'] }}</h2>
+                        <p class="d-flex flex-column">
+                            @foreach($link['link'] as $item)
+                                <a href="#">{{ $item }}</a>
+                            @endforeach
+                        </p>
+                    </li>                           
+                    @endforeach
+                </ul>
+            </nav>
+        </div>
+
+        <div class="right-content">
+            <img src="{{ Vite::asset('resources/images/dc-logo-bg.png') }}" alt="">
+        </div>
+
+    </div>
+</section>
+
+@endsection
+
+@section('footer-bottom')
+
+            <section class="footer-bottom">
+                    <section class="container">
+                        <div>
+                            <button class="btn ">SIGN-UP NOW!</button>
+                        </div>
+                        <div>
+                            <div>
+                                <h3>FOLLOW US</h3>
+                            </div>
+                            <nav>
+                                <ul>
+                                    <li>
+
+                                    </li>
+                                    
+                                </ul>
+                            </nav>
+                        </div>
+                    </section>    
+            </section>
+@endsection
